@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+#pr_id_1
+  > div.p-carousel-content
+  > ul
+  > li.p-carousel-indicator.p-highlight
+  > button {
+  background: #c31815 !important;
+}
+
+#pr_id_1 > div > ul > li.p-carousel-indicator > button {
+  background-color: #ebc2c1;
+}
+
+#pr_id_1 > div.p-carousel-content > ul > li:nth-child(4) > button,
+#pr_id_1 > div.p-carousel-content > ul > li:nth-child(2) > button,
+#pr_id_1 > div.p-carousel-content > ul > li:nth-child(1) > button,
+#pr_id_1 > div.p-carousel-content > ul > li:nth-child(3) > button {
+  width: 25px;
+  height: 4px;
+}
+
+#pr_id_1
+  > div.p-carousel-content
+  > div
+  > button.p-ripple.p-element.p-carousel-next.p-link,
+#pr_id_1
+  > div.p-carousel-content
+  > div
+  > button.p-ripple.p-element.p-carousel-prev.p-link {
+  display: none;
+}

@@ -1,0 +1,25 @@
+<section class="web-section">
+    <div class="break-tab" ngModel="sortBreakingNews">
+        <p class="breaking">
+            <span class="break">{{breaking}}</span>
+        </p>
+
+        <p class="marquee">
+            <a href="{{sortBreakingNews.url}}" target="_blank" rel="noopener noreferrer">{{sortBreakingNews.title}}</a>
+        </p>
+    </div>
+</section>
+
+
+<section class="mobile-section">
+    <div class="break-tab" ngModel="sortBreakingNews">
+        <p class="breaking">
+            <span class="break">{{breaking}}</span>
+            <span class="tap">{{tap}}</span>
+        </p>
+
+        <marquee>
+            <a href="{{sortBreakingNews.url}}" target="_blank" rel="noopener noreferrer">{{sortBreakingNews.title}}</a>
+        </marquee>
+    </div>
+</section>

@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  color: #2a2a2a;
+}
+
+app-main {
+  display: flex;
+  background-color: #e5e5e5;
+  width: 100%;
+  padding: 4% 5%;
+}
+
+app-scrolling-news {
+  background-color: #e5e5e5;
+  padding: 0 5%;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  app-main {
+    padding: 4% 0%;
+  }
+}
+
+@media (max-width: 580px) {
+  app-main {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}

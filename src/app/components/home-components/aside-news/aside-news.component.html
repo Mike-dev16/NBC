@@ -1,0 +1,29 @@
+<aside ng-model = "sortLiveNews" ngModel = "imageMissing">
+    <div class="live-header">
+        <p class="live">{{live}}</p>
+        <p class="recorder">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd" d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z" stroke="#C31815" stroke-width="0.5"/>
+            </svg>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z" fill="#C31815"/>
+             </svg>                
+            
+        </p>
+    </div>
+    <div class="live-cover">
+        <p class="live-image" style="background-image: url({{(sortLiveNews.urlToImage) ? sortLiveNews.urlToImage : imageMissing}});"></p>
+        <p class="live-title"><a href="{{sortLiveNews.url}}" target="_blank" rel="noopener noreferrer">{{sortLiveNews.title}}</a></p>
+    </div>
+    <div class="locate-pane">
+        <span class="location">{{location}}</span>
+            <form #userlocation = "ngForm" (ngSubmit) = "onClickSubmit(userlocation.value)" >
+                <label  name = 'locationId' for="locationId">{{label}}</label> <br/>
+                <input type = "text" name = "locationId" id="locationId" placeholder = "Enter Your Location" ngModel />
+                <br/>
+               
+                <input type = "submit" value = "SUBMIT">
+             </form>
+    </div>
+</aside>
+

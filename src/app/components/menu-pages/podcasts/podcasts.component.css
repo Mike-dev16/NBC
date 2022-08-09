@@ -1,0 +1,15 @@
+p {
+  width: 100%;
+  padding: 0 0 500px 25%;
+}
+
+@media (max-width: 768px) {
+  .pages-mobile.open.close,
+  .pages-mobile {
+    margin-top: 0px;
+  }
+
+  .pages-mobile.open {
+    margin-top: 247px;
+  }
+}
